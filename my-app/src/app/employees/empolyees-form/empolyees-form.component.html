@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact-us</title>
+</head>
+<body>
+   <div class="container mx-lg-5 my-lg-5">
+    <div class="row">
+        <div class="col-md-6 text-center my-5 text-decoration-underline" id="messge">
+            <h1 class="text-uppercase">How can we help you</h1>
+            <h6>send us message</h6>
+        </div>
+        <div class="col-md-6">
+            <a target="_blank" href=""><img
+                src="../../assets/img/contact.jpg" width="500px" height="500px"></a>
+        </div>
+       
+    </div>
+<div class="row mx-auto">
+    <div class="col-md-12">
+        <form class="row " [formGroup]="service.empoyeeForm" (submit)="onSubmit()" [class.submitted]="submited">
+            <div class="col-12 mb-3">
+                <label class="form-label">Full Name</label>
+                <input class="form-control form-control-lg" placeholder="Enter your full name" formControlName="FullName">
+            </div>
+            <div class="col-12 mb-3">
+                <label class="form-label">Email</label>
+                <input class="form-control form-control-lg" placeholder="Enter Email" formControlName="Email">
+            </div>
+            <div class="col-12 mb-3">
+                <label class="form-label">Phone Number</label>
+                <input class="form-control form-control-lg" placeholder="Enter Phone Number" formControlName="Phone">
+            </div>
+            
+            <div class="col-12 mb-3">
+                  <label class="form-label">Message-us</label>
+                
+                <textarea formControlName="Feedback" id="" cols="25" rows="7" class="form-control form-control-lg"></textarea>
+            </div>
+            
+            <!-- <div class="col-6 mb-3">
+                <label class="form-label">Position</label>
+                <input class="form-control form-control-lg" placeholder="Designation" formControlName="Position">
+            </div> -->
+            <!-- <div class="col-6 mb-3">
+                <label class="form-label">Salary</label>
+                <input class="form-control form-control-lg" placeholder="Per year" formControlName="Salary" type="number">
+            </div> -->
+            <div class="col-12 d-grid">
+                <button class="btn btn-lg btn-primary" type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+     
+</div>
+
+   </div>
+</body>
+</html>
